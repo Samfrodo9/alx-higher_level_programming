@@ -30,4 +30,4 @@
   - Pycodestyle (version 2.8.*)
 
 ## Credits & Authors
-- [Oluwatomisin ISOGUN](https://github.com/TosinISOGUN)
+- [Adeyemi Samuel](https://github.com/Samfrodo9)
