@@ -42,4 +42,4 @@
  - No more than 5 functions per file.
 
 ## Credits & Authors
-- [Oluwatomisin ISOGUN](https://github.com/TosinISOGUN)
+- [ADEYEMI SAMUEL](https://github.com/Samfrodo9)
