@@ -1,4 +1,4 @@
-# Python - Inheritance
+# Python - Inheritance 
 
 ## Table of Contents
 | **`Files`** | **`Description`** |
