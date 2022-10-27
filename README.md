@@ -1,30 +1,41 @@
-# ALX HIGH LEVEL PROGRAMMING
-<p align="center">
-<img src="https://camo.githubusercontent.com/a70c1748550c0ff2d4917a08610a1a89cd782edc00f91bedd4c50f4d7997b6a6/68747470733a2f2f6c68332e676f6f676c6575736572636f6e74656e742e636f6d2f667931304a4964425267675a3668346e774e546258764461615770744c6564663279593862444c437671357253636b5972636b304a31563657737a6b5537376d74304a75765245437154577341504b5254455951704d3944476a413974574d6a6f5956653d77323735" width="" height="" />
-</p>
-
-## Getting started with high-level programming in Python.
-<p align="center">
-<img src="https://media2.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="500" height="200" />
-</p>
-
-## Synopsis
-A high-level language is any programming language that enables development of a program in a much more user-friendly programming context and is generally independent of the computer's hardware architecture.
-
-A high-level language has a higher level of abstraction from the computer, and focuses more on the programming logic rather than the underlying hardware components such as memory addressing and register utilization.
-
-## Description
-At ALX Holberton School, we learn by doing. We have projects everyday that we have to push on GitHub in order for an automatic review to be done. This repository contains directories each corresponding to a high-level language project. These projects are part of the ALX Holberton School 1 year curriculum. In these projects, we cover everything from the basics of `Python` and `Javascript` (`Node`), as well as `SQL` (with `MySQL`) to more advanced topics.
+# Python - Inheritance
 
 ## Table of Contents
-| **Directories** | **Description**|
+| **`Files`** | **`Description`** |
 | --- | --- |
-| [0x00. Python - Hello, World](https://github.com/Samfrodo9/alx-higher_level_programming/tree/main/0x00-python-hello_world) | 	Introduction to Python programming. |
-| [0x01-python-if_else_loops_functions](https://github.com/Samfrodo9/alx-higher_level_programming/tree/main/0x01-python-if_else_loops_functions) | Introduction to Python if/else statements, loops and functions. |
-| [0x02-python-import_modules](https://github.com/Samfrodo9/alx-higher_level_programming/tree/main/0x02-python-import_modules) | Introduction to Python modules. |
-| [0x03-python-data_structures](https://github.com/Samfrodo9/alx-higher_level_programming/tree/main/0x03-python-data_structures) | Introduction to Python data structures. |
+| 0-lookup.py	| Python function that returns the list of available attributes and methods of an object. |
+| 1-my_list.py	| Python class MyList that inherits from list. |
+| 2-is_same_class.py	| Python function that returns True if the object is exactly an instance of the specified class ; otherwise False. |
+| 3-is_kind_of_class.py	| Python function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False. |
+| 4-inherits_from.py	| Python function that returns True if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise False. |
+| 5-base_geometry.py	| Python empty class BaseGeometry |
+| 6-base_geometry.py	| Python class BaseGeometry (based on 5-base_geometry.py) |
+| 7-base_geometry.py	| Python class BaseGeometry (based on 6-base_geometry.py) |
+| 8-rectangle.py	| Python class Rectangle that inherits from BaseGeometry (7-base_geometry.py) |
+| 9-rectangle.py	| Python class Rectangle that inherits from BaseGeometry (7-base_geometry.py) (task based on 8-rectangle.py) |
+| 10-square.py	| Python class Square that inherits from Rectangle (9-rectangle.py) |
+| 11-square.py	| Python class Square that inherits from Rectangle (9-rectangle.py). (task based on 10-square.py) |
+| 100-my_int.py	| Python class MyInt that inherits from int. |
+| 101-add_attribute.py	| Python function that adds a new attribute to an object if it’s possible. |
 
+## Requirements & Environment
+<img src="https://alx-apply.hbtn.io/brand_alx/share_image_2019.jpg" width="300" height="100" />
 
-## Credits & Authors
-- [Adeyemi Samuel](https://github.com/Samfrodo9)
-> Other collaborators are acknowledged within each project.
+### Python Scripts
+- Allowed editors: `vi`, `vim`, `emacs`.
+- All files are interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+- A README.md file at the root of the repo, containing a description of the repository
+- A README.md file, at the root of the folder of this project, is mandatory
+- Coding Style;
+  - Pycodestyle (version 2.8.*)
+
+###  Python Test Cases
+- Allowed editors: `vi`, `vim`, `emacs`.
+- All files should end with a new line.
+- All test files should be inside a folder tests.
+- All test files should be text files (extension: .txt).
+- All tests should be executed by using this command: `python3 -m doctest ./tests/*`.
+
+## Authors & Credits
+- [Oluwatomisin ISOGUN](https://github.com/TosinISOGUN)
+> Other collaborators are acknowledged within the project.
