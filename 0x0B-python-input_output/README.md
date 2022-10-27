@@ -1,4 +1,4 @@
-# Python - More Classes and Objects
+# Python - More Classes and Objects 
 
 ## Table of Contents
 | Files | Description |
