@@ -1,7 +1,7 @@
 # JavaScript - Web scraping
 
 ## General Requirement & Environment
-<img src="https://github.com/TosinISOGUN/TosinISOGUN/blob/main/ALX.jpeg?raw=true" width="300" height="100" />
+<img src="https://github.com/Samfrodo9/Samfrodo9/blob/main/ALX.jpeg?raw=true" width="300" height="100" />
 
 - Allowed editors: vi, vim, emacs.
 - A README.md file, at the root of the folder of the project, is mandatory.
@@ -13,4 +13,4 @@
 - All codes should use the pycodestyle (version 2.8.*)
 
 ## Authors
-- Oluwatomisin Isogun
+- Adeyemi Samuel
