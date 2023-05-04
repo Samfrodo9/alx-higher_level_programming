@@ -37,6 +37,6 @@
 - All tests should be executed by using this command: `python3 -m doctest ./tests/*`.
 
 ## Authors & Credits
-- [Oluwatomisin ISOGUN](https://github.com/Samfrodo9)
+- [Adeyemi Samuel](https://github.com/Samfrodo9)
 > Other collaborators are acknowledged within the project.
   
