@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+
+"""A module that has a Node and List defined"""
+
+
 class Node:
     '''This class defines a node'''
     def __init__(self, data, next_node=None):
