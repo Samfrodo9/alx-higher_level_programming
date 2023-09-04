@@ -44,8 +44,8 @@ class Square():
             if (self.__size) * (self.__size) \
                     > (right.__size) * (right.__size):
                 return True
-        else:
-            return False
+            else:
+                return False
 
     def __ne__(self, right):
         """A function implementing != """
@@ -53,8 +53,8 @@ class Square():
             if (self.__size) * (self.__size) \
                     != (right.__size) * (right.__size):
                 return True
-        else:
-            return False
+            else:
+                return False
 
     def __eq__(self, right):
         """A function implementing == """
@@ -62,8 +62,8 @@ class Square():
             if (self.__size) * (self.__size) \
                     == (right.__size) * (right.__size):
                 return True
-        else:
-            return False
+            else:
+                return False
 
     def __ge__(self, right):
         """A function implementing >= """
@@ -71,8 +71,8 @@ class Square():
             if (self.__size) * (self.__size) \
                     >= (right.__size) * (right.__size):
                 return True
-        else:
-            return False
+            else:
+                return False
 
     def __le__(self, right):
         """A function implementing <= """
@@ -80,5 +80,5 @@ class Square():
             if (self.__size) * (self.__size) \
                     <= (right.__size) * (right.__size):
                 return True
-        else:
-            return False
+            else:
+                return False
