@@ -66,6 +66,8 @@ class Square():
             print()
         else:
             string = ""
+            print("\n" * self.__position[1], end="")
             for i in range(self.__size):
-                string = string + " " * self.__position[0] + '#' * self.__size + '\n'
+                string = string + (" " * self.__position[0]) + ('#' *
+                        self.__size) + '\n'
             return string.strip()
