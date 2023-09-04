@@ -30,7 +30,7 @@ class Square():
         self.__size = value
 
     def __lt__(self, right):
-        """A function implementing < """
+        """A function implementing < of a square"""
         if isinstance(right, Square):
             if (self.__size) * (self.__size) \
                     < (right.__size) * (right.__size):
@@ -39,7 +39,7 @@ class Square():
                 return False
 
     def __gt__(self, right):
-        """A function implementing > """
+        """A function implementing > of a square"""
         if isinstance(right, Square):
             if (self.__size) * (self.__size) \
                     > (right.__size) * (right.__size):
@@ -48,7 +48,7 @@ class Square():
                 return False
 
     def __ne__(self, right):
-        """A function implementing != """
+        """A function implementing != of a square"""
         if isinstance(right, Square):
             if (self.__size) * (self.__size) \
                     != (right.__size) * (right.__size):
@@ -57,7 +57,7 @@ class Square():
                 return False
 
     def __eq__(self, right):
-        """A function implementing == """
+        """A function implementing == of a square"""
         if isinstance(right, Square):
             if (self.__size) * (self.__size) \
                     == (right.__size) * (right.__size):
@@ -66,7 +66,7 @@ class Square():
                 return False
 
     def __ge__(self, right):
-        """A function implementing >= """
+        """A function implementing >= of a square """
         if isinstance(right, Square):
             if (self.__size) * (self.__size) \
                     >= (right.__size) * (right.__size):
@@ -75,10 +75,5 @@ class Square():
                 return False
 
     def __le__(self, right):
-        """A function implementing <= """
-        if isinstance(right, Square):
-            if (self.__size) * (self.__size) \
-                    <= (right.__size) * (right.__size):
-                return True
-            else:
-                return False
+        """A function implementing <= of a square"""
+        return self.area() <= right.area()
