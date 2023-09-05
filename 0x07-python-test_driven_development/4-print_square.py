@@ -2,6 +2,7 @@
 
 """A module that prints a Square"""
 
+
 def print_square(size):
     """A function that prints a square with character #"""
     if isinstance(size, float) and size < 0:
