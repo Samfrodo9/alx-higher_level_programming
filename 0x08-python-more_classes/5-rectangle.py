@@ -3,9 +3,6 @@
 """A module that defines a Rectangle Class"""
 
 
-from collections.abc import Iterable
-
-
 class Rectangle:
     """A rectangle class with height and width"""
     def __init__(self, width=0, height=0):
