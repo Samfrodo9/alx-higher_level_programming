@@ -54,7 +54,11 @@ class Rectangle:
 
     def __str__(self):
         """Returns a '#' symbol"""
-        string = ""
-        for i in range(self.height):
-            print('#' * self.width)
-        return ""
+        if (self.__width == 0 or self.__height == 0):
+            return ("")
+        final = []
+        for i in range(self.__height):
+            [final.append('#') for j in range(self.__width)]
+            if i != (self.__height - 1):
+                final.append('\n')
+        return ("".join(final))
