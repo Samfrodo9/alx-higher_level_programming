@@ -45,3 +45,4 @@ class Rectangle:
     def area(self):
         """Returns the area of a square"""
         return self.width * self.height
+    
