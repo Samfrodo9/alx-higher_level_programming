@@ -66,3 +66,6 @@ class Rectangle:
     def __repr__(self):
         """Returns a string to create another class"""
         return f"Rectangle({self.width}, {self.height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
