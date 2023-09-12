@@ -6,6 +6,7 @@
 class Rectangle:
     """A rectangle class with height and width"""
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """A method that instantiates private attributes"""
         if not isinstance(width, int):
