@@ -59,14 +59,15 @@ class Rectangle:
 
     def __str__(self):
         """Returns a '#' symbol"""
+        final = ""
         if (self.__width == 0 or self.__height == 0):
-            return ("")
-        final = []
+            return (final)
         for i in range(self.__height):
-            [final.append(Rectangle.print_symbol) for j in range(self.__width)]
+            for j in range(self.__width):
+                final = final + str(self.print_symbol)
             if i != (self.__height - 1):
-                final.append('\n')
-        return ("".join(final))
+                final = final + "\n"
+        return (final)
 
     def __repr__(self):
         """Returns a string to create another class"""
