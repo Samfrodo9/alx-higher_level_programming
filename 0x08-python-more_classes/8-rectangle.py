@@ -5,6 +5,9 @@
 
 class Rectangle:
     """A rectangle class with height and width"""
+    number_of_instances = 0
+    print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """A method that instantiates private attributes"""
         if not isinstance(width, int):
@@ -17,6 +20,7 @@ class Rectangle:
             raise ValueError('height must be >= 0')
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -25,6 +29,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
+
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError('width must be >= 0')
@@ -54,15 +59,36 @@ class Rectangle:
 
     def __str__(self):
         """Returns a '#' symbol"""
+        final = ""
         if (self.__width == 0 or self.__height == 0):
-            return ("")
-        final = []
+            return (final)
         for i in range(self.__height):
-            [final.append('#') for j in range(self.__width)]
+            for j in range(self.__width):
+                final = final + str(self.print_symbol)
             if i != (self.__height - 1):
-                final.append('\n')
-        return ("".join(final))
+                final = final + "\n"
+        return (final)
 
     def __repr__(self):
         """Returns a string to create another class"""
         return f"Rectangle({self.width}, {self.height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+    
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+
+        if rect_1.area() == rect_2.area():
+            return rect_1
+
+        if rect_1.area() > rect_2.area():
+            return rect_1
+        else:
+            return rect_2
