@@ -39,4 +39,4 @@ class Student():
 
     def reload_from_json(self, json):
         '''A method that replaces all attributes of the student instance'''
-        self.__dict__.update(json)
+        self.__dict__ = json
