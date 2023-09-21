@@ -7,6 +7,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """ Rectangle: A class that defines a Rectangle """
 
@@ -18,7 +19,7 @@ class Rectangle(Base):
         self.__y = y
         self.id = id
 
-        super().__init__(self.id)
+        super().__init__(id)
 
         @property
         def width(self):
