@@ -105,3 +105,10 @@ class Rectangle(Base):
             int: area
         """
         return self.width * self.height
+
+    def display(self):
+        """
+        display displays a symbol '#'
+        """
+        for i in range(self.__height):
+            print('#' * self.__width)
