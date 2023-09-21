@@ -2,7 +2,7 @@
 from models.base import Base
 
 """
-    A Rectangle Module
+    A Rectangle Module defined here
 """
 
 
