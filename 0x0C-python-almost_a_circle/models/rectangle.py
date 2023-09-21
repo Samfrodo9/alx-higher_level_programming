@@ -111,7 +111,7 @@ class Rectangle(Base):
         display displays a symbol '#'
         """
         for i in range(self.__y):
-            print()
+            print(' ' * self.__x)
         for i in range(self.__height):
                 print(' ' * self.__x, '#' * self.__width)
 
