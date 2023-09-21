@@ -21,46 +21,46 @@ class Rectangle(Base):
 
         super().__init__(id)
 
-        @property
-        def width(self):
-            """width getter for private attribute 'width' of rectangle"""
-            return self.__width
+    @property
+    def width(self):
+        """width getter for private attribute 'width' of rectangle"""
+        return (self.__width)
 
-        @width.setter
-        def width(self, value):
-            """width setter for private attribute 'width' of rectangle"""
-            self.__width = value
+    @width.setter
+    def width(self, value):
+        """width setter for private attribute 'width' of rectangle"""
+        self.__width = value
 
-        @property
-        def height(self):
-            """
-            height getter for private attribute 'height' of rectangle
-            """
-            return self.__height
+    @property
+    def height(self):
+        """
+        height getter for private attribute 'height' of rectangle
+        """
+        return (self.__height)
 
-        @height.setter
-        def height(self, value):
-            """
-            height setter for private attribute 'width' of rectangle
-            """
-            self.__height = value
+    @height.setter
+    def height(self, value):
+        """
+        height setter for private attribute 'width' of rectangle
+        """
+        self.__height = value
 
-        @property
-        def x(self):
-            """x getter for private attribute 'x' of rectangle"""
-            return self.__x
+    @property
+    def x(self):
+        """x getter for private attribute 'x' of rectangle"""
+        return (self.__x)
 
-        @x.setter
-        def x(self, value):
-            """x setter for private attribute 'width' of rectangle"""
-            self.__x = value
+    @x.setter
+    def x(self, value):
+        """x setter for private attribute 'width' of rectangle"""
+        self.__x = value
 
-        @property
-        def y(self):
-            """ y getter for private attribute 'y' of rectangle"""
-            return self.__y
+    @property
+    def y(self):
+        """ y getter for private attribute 'y' of rectangle"""
+        return (self.__y)
 
-        @y.setter
-        def y(self, value):
-            """y setter for private attribute 'width' of rectangle"""
-            self.__y = value
+    @y.setter
+    def y(self, value):
+        """y setter for private attribute 'width' of rectangle"""
+        self.__y = value
