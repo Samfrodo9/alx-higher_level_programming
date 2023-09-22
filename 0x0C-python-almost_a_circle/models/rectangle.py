@@ -121,7 +121,7 @@ class Rectangle(Base):
         """
         rec = "[Rectangle] ({}) {:d}/{:d} - {:d}/{:d}"
         return (rec.format(self.id, self.x, self.y, self.width, self.height))
-    
+
     def update(self, *args):
         """An attribute update method"""
         # Check the length of the args tuple
