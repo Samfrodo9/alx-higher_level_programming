@@ -123,6 +123,7 @@ class Rectangle(Base):
         return (rec.format(self.id, self.x, self.y, self.width, self.height))
     
     def update(self, *args):
+        """An attribute update method"""
         # Check the length of the args tuple
         if len(args) == 1:
             self.id = args[0]
