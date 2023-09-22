@@ -166,3 +166,27 @@ class Rectangle(Base):
             self.__x = args[3]
             self.__y = args[4]
         """
+
+    def to_dictionary(self):
+        """Returns dict rep of a Rectangle"""
+        return {'id': self.id,
+                'width': self.width,
+                'height': self.height,
+                'x': self.x,
+                'y': self.y}
+        
+
+        """
+        dictionary = {}
+        attributes = ["id", "size", "x", "y"]
+        for key in attributes:
+            if hasattr(self, key):
+                dictionary[key] = getattr(self, key)
+        return dictionary
+
+        dictionary = {}
+        attributes = ["id", "size", "x", "y"]
+        for key in attributes:
+            dictionary[key] = self.__getattribute__(key)
+        return (dictionary)  
+        """
