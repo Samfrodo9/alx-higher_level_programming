@@ -30,7 +30,7 @@ class Square(Rectangle):
         """
         sqr = "[Square] ({}) {:d}/{:d} - {:d}"
         return sqr.format(self.id, self.x, self.y, self.size)
-    
+
     def update(self, *args, **kwargs):
         """A method that updates the attributes"""
         if args and len(args) != 0:
@@ -46,5 +46,3 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if key in ('id', 'size', 'x', 'y'):
                     setattr(self, key, value)
-
-            
