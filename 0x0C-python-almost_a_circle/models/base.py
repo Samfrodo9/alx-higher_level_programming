@@ -28,3 +28,31 @@ class Base:
             return '[]'
         else:
             return dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        '''A method to save JSON string representation to a file'''
+        if list_objs is None or len(list_objs) == 0:
+            data = '[]'
+        else:
+            dict_list = []
+            for obj in list_objs:
+                dict_list.append(obj.to_dictionary())
+            data = cls.to_json_string(dict_list)
+
+        filename = cls.__name__ + '.json'
+        with open(filename, encoding='utf-8', mode='w') as file:
+            file.write(data)
+
+        '''A method to save JSON string representation to a file        a = 0
+        if issubclass(Base, list_objs):
+            if list_objs is None or len(list_objs) == 0:
+                a = 1
+            filename = list_objs.__name__ + '.json'
+            string = Base.to_json_string(list_objs)
+            with open("filename", encoding='utf-8', mode='w') as file:
+                if a == 1:
+                    file.write('[]')
+                else:
+                    file.write(string)
+        '''
