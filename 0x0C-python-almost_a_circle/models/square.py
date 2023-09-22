@@ -10,6 +10,7 @@ class Square(Rectangle):
     """A Square module that inherits from a Rectangle"""
 
     def __init__(self, size, x=0, y=0, id=None):
+        '''A constructor method'''
         if type(size) != int:
             raise TypeError("width must be an integer")
         if size <= 0:
@@ -40,3 +41,5 @@ class Square(Rectangle):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__size = value
+        self.__height = value
+        self.__width = value
