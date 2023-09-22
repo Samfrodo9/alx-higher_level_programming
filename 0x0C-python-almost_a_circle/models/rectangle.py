@@ -174,7 +174,6 @@ class Rectangle(Base):
                 'height': self.height,
                 'x': self.x,
                 'y': self.y}
-        
 
         """
         dictionary = {}
@@ -188,5 +187,5 @@ class Rectangle(Base):
         attributes = ["id", "size", "x", "y"]
         for key in attributes:
             dictionary[key] = self.__getattribute__(key)
-        return (dictionary)  
+        return (dictionary)
         """
