@@ -11,8 +11,8 @@ My name is Adeyemi Samuel
 
 ::
 Case of Only one name is supplied
->>> say_my_name("Adeyemi")
-My name is Adeyemi
+>>> say_my_name("Adeyemi") #doctest: +NORMALIZE_WHITESPACE
+My name is Adeyemi 
 
 ::
 Case of no name is supplied
