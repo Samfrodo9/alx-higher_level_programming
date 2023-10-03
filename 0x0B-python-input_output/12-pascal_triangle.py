@@ -6,6 +6,7 @@
     representing the Pascal’s triangle of n:
 """
 
+
 def pascal_triangle(n):
     """A function doing the above"""
     if n <= 0:
