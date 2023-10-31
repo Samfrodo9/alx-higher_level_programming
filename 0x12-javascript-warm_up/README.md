@@ -1,3 +1,3 @@
-# A Directory containing my ```ALX``` tasks to learn ```Javascript``` programming Language
+# A Directory containing my ```ALX``` tasks to learn ```Javascript``` programming Language.
 
 --
