@@ -12,7 +12,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 
-
 if __name__ == "__main__":
     username = argv[1]
     password = argv[2]
@@ -28,5 +27,4 @@ if __name__ == "__main__":
     for state in states:
         print(f"{num}: {state}")
         num = num + 1
-    
     session.close()
