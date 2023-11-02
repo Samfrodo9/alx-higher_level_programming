@@ -18,7 +18,8 @@ def run():
         connect = MySQLdb.connect(host=db_host, port=db_port, user=db_usr,
                                   passwd=db_pass, db=db_name, charset="utf8")
         cur = connect.cursor()
-        query = "SELECT * FROM states WHERE name='{}' ORDER BY id ASC;".format(args)
+        query = "SELECT * FROM states WHERE name='{}' "
+        query = query + "ORDER BY id ASC;".format(args)
         cur.execute(query)
         result = cur.fetchall()
         for i in result:
