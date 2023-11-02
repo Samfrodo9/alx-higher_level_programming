@@ -17,7 +17,7 @@ def run():
     try:
         connect = MySQLdb.connect(host=db_host, port=db_port, user=db_usr,
                                   passwd=db_pass, db=db_name, charset="utf8")
-    cur = connect.cursor()
+        cur = connect.cursor()
         query = "SELECT name FROM cities "
         query += "WHERE state_id = (SELECT id FROM states "
         query += "WHERE name = %s)"
