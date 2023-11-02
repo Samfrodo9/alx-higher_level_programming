@@ -25,6 +25,6 @@ if __name__ == "__main__":
     states = session.query(State).order_by(State.id).all()
     num = 1
     for state in states:
-        print(f"{num}: {state}")
+        print(f"{num}: {state.name}")
         num = num + 1
     session.close()
