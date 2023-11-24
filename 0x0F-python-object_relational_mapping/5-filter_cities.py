@@ -17,21 +17,20 @@ def run():
     try:
         connect = MySQLdb.connect(host=db_host, port=db_port, user=db_usr,
                                   passwd=db_pass, db=db_name, charset="utf8")
-        cur = connect.cursor()
-        cur = connect.cursor()
-        query = "SELECT cities.id, cities.name, states.name FROM cities "
-        query += "INNER JOIN states ON  cities.state_id = states.id "
-        query += "ORDER BY cities.id ASC"
-        cur.execute(query)
+    cur = connect.cursor()
+        query = "SELECT name FROM cities "
+        query += "WHERE state_id = (SELECT id FROM states "
+        query += "WHERE name = %s)"
+        cur.execute(query, (match, ))
         result = cur.fetchall()
+        result_list = []
         for i in result:
-            print(i)
-    except Exception as exc:
-        print(exc)
-    finally:
+            result_list.append(i[0])
+        print(", ".join(result_list))
         cur.close()
         connect.close()
-
+    except Exception as e:
+        pass
 
 if __name__ == "__main__":
     run()
