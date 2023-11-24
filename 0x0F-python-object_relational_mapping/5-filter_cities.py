@@ -11,6 +11,7 @@ def run():
     db_usr = argv[1]
     db_pass = argv[2]
     db_name = argv[3]
+    args = argv[4]
     db_host = "localhost"
     db_port = 3306
     try:
