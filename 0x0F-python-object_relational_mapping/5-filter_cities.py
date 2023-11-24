@@ -21,7 +21,7 @@ def run():
         query = "SELECT name FROM cities "
         query += "WHERE state_id = (SELECT id FROM states "
         query += "WHERE name = %s)"
-        cur.execute(query, (match, ))
+        cur.execute(query, (args, ))
         result = cur.fetchall()
         result_list = []
         for i in result:
