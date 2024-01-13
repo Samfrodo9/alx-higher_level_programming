@@ -7,8 +7,7 @@ import urllib.request
 if __name__ == "__main__":
     '''the script definition'''
     url = 'https://alx-intranet.hbtn.io/status'
-    quest = urllib.request.Request(url)
-    with urllib.request.urlopen(quest) as response:
+    with urllib.request.urlopen(url) as response:
         page = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(page)))
